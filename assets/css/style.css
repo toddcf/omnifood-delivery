@@ -20,4 +20,19 @@ html {
 
 header {
 	background-image: url(../img/food/hero.jpg);
+	background-size: cover; /*Shows entire image*/
+	background-position: center; /*Centers the background*/
+	height: 100vh; /*Sets header height to match viewport height:*/
+}
+
+.hero-text-box {
+	position: absolute; /*So that we can vertically AND horizontally center this box*/
+	width: 1140px; /*Same width as the entire row*/
+	top: 50%; /*Vertically aligns the top of this div with the center of its parent div*/
+	left: 50%; /*Horizontally aligns the left side of this dive with the center of its parent div*/
+	transform: translate(-50%, -50%); /*Shifts the div so that its horizontal and vertical centers are what align with its parent div's center*/
+}
+
+h1 {
+	margin: 0;
 }
