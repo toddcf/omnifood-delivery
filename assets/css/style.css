@@ -13,5 +13,11 @@ html {
 }
 
 .row {
+	/*This is the only width we will define in px instead of %*/
 	max-width: 1140px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url(../img/food/hero.jpg);
 }
