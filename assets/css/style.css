@@ -6,7 +6,7 @@
 
 html {
 	color: #555; /*grey*/
-	font-family: 'Lato', 'Arial', sans-serif,;
+	font-family: 'Lato', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
@@ -35,4 +35,10 @@ header {
 
 h1 {
 	margin: 0;
+	color: #fff;
+	font-size: 240%; /*Relative to HTML default we set above.*/
+	font-weight: 300; /*Decrease font-weight because font-size is large.*/
+	text-transform: uppercase; /*Capitalize all letters.*/
+	letter-spacing: 1px; /*So the text is not so compressed.*/
+	word-spacing: 4px;
 }
