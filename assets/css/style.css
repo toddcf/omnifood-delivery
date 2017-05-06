@@ -1,3 +1,7 @@
+/*-------------------------------------
+BASIC SETUP
+-------------------------------------*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,26 +16,17 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
+/*-------------------------------------
+REUSABLE COMPONENTS
+-------------------------------------*/
+
 .row {
 	/*This is the only width we will define in px instead of %*/
 	max-width: 1140px;
 	margin: 0 auto;
 }
 
-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(../img/food/hero.jpg);
-	background-size: cover; /*Shows entire image*/
-	background-position: center; /*Centers the background*/
-	height: 100vh; /*Sets header height to match viewport height:*/
-}
-
-.hero-text-box {
-	position: absolute; /*So that we can vertically AND horizontally center this box*/
-	width: 1140px; /*Same width as the entire row*/
-	top: 50%; /*Vertically aligns the top of this div with the center of its parent div*/
-	left: 50%; /*Horizontally aligns the left side of this dive with the center of its parent div*/
-	transform: translate(-50%, -50%); /*Shifts the div so that its horizontal and vertical centers are what align with its parent div's center*/
-}
+/* ----- HEADINGS ----- */
 
 h1 {
 	margin-top: 0;
@@ -43,6 +38,8 @@ h1 {
 	letter-spacing: 1px; /*So the text is not so compressed.*/
 	word-spacing: 4px;
 }
+
+/* ----- BUTTONS ----- */
 
 /*The links will look the same before and after they've been clicked:*/
 .btn:link,
@@ -83,5 +80,24 @@ h1 {
 .btn-ghost:active {
 	border: 1px solid #cf6d17;
 	color: #fff;
+}
+
+/*-------------------------------------
+HEADER
+-------------------------------------*/
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(../img/food/hero.jpg);
+	background-size: cover; /*Shows entire image*/
+	background-position: center; /*Centers the background*/
+	height: 100vh; /*Sets header height to match viewport height:*/
+}
+
+.hero-text-box {
+	position: absolute; /*So that we can vertically AND horizontally center this box*/
+	width: 1140px; /*Same width as the entire row*/
+	top: 50%; /*Vertically aligns the top of this div with the center of its parent div*/
+	left: 50%; /*Horizontally aligns the left side of this dive with the center of its parent div*/
+	transform: translate(-50%, -50%); /*Shifts the div so that its horizontal and vertical centers are what align with its parent div's center*/
 }
 
