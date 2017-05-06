@@ -34,7 +34,8 @@ header {
 }
 
 h1 {
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
 	color: #fff;
 	font-size: 240%; /*Relative to HTML default we set above.*/
 	font-weight: 300; /*Decrease font-weight because font-size is large.*/
@@ -42,3 +43,45 @@ h1 {
 	letter-spacing: 1px; /*So the text is not so compressed.*/
 	word-spacing: 4px;
 }
+
+/*The links will look the same before and after they've been clicked:*/
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s; /* Transition takes 0.2 seconds. */
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	border: 1px solid #e67e22;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #e67e22;
+	color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: 1px solid #cf6d17;
+	color: #fff;
+}
+
