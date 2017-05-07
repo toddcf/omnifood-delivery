@@ -309,20 +309,15 @@ HOW IT WORKS
 HOW IT WORKS
 -------------------------------------*/
 
-.cities {
-	list-style: none;
+.section-cities {
 	width: 100%;
 }
 
-.cities li {
+.city {
 	display: block;
 	float: left;
-	width: 25%;
+	width: 23%;
 }
-
-/*.city {
-	width: 100%;
-}*/
 
 .city img {
 	width: 100%;
