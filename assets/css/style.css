@@ -193,3 +193,28 @@ header {
 .main-nav li a:active {
 	border-bottom: 2px solid #e67e22;
 }
+
+/*-------------------------------------
+MEALS
+-------------------------------------*/
+
+.meals-showwcase {
+	list-style: none; /* Remove bullet points. */
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	width: 100%; /* 100% of its parent container, which is the <li>. */
+	margin: 0; /* Groups all the photos so they are touching. Overrides the normalize.css file. */
+}
+
+.meal-photo img {
+	width: 100%; /* 100% of its parent container, which is the <figure>. */
+	height: auto;
+}
