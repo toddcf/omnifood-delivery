@@ -240,3 +240,53 @@ MEALS
 	opacity: 1;
 	transform: scale(1.03); /* When hovering, zoom back out to normal size -- plus 3% to prevent a white gap from appearing at the bottom of the image. */
 }
+
+/*-------------------------------------
+HOW IT WORKS
+-------------------------------------*/
+
+/* iPhone image */
+.steps-box:first-child {
+	text-align: right; /* The iPhone image */
+	padding-right: 3%;
+	margin-top: 30px;
+}
+
+/* Numbers and Text Paragraphs */
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+
+.app-screen {
+	width: 40%; /* Percentage of the .steps-box that it's in. */
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+	margin-bottom: 80px;
+}
+
+.works-step div {
+	color: #e67e22; /* Sets the color of the numbers' text to orange. */
+	border: 2px solid #e67e22; /* Adds a rectangular orange border around the numbers. */
+	display: inline-block; /* Shrinks the border to fit the number. */
+	border-radius: 50%; /* Makes the border a circle. */
+	height: 55px;
+	width: 55px; /* Same as height, so the border can be circular. */
+	text-align: center; /* Centers the number horizontally inside of the div. */
+	padding: 7px; /* Helps center the numbers vertically within the circles. */
+	float: left; /* Brings the paragraph text up beside the numbers. */
+	font-size: 150%; /* Makes the numbers bigger and helps center them vertically within the cirlces. */
+	margin-right: 25px; /* Spacing between numbers and paragraph text. */
+}
+
+/* App Store Images */
+.btn-app img {
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
+}
