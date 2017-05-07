@@ -30,10 +30,15 @@ section {
 	padding: 80px 0;
 }
 
+.box {
+	padding: 1%;
+}
+
 /* ----- HEADINGS ----- */
 
 h1,
-h2 {
+h2,
+h3 {
 	font-weight: 300; /*Decrease font-weight because font-size is large.*/
 	text-transform: uppercase; /*Capitalize all letters.*/
 	letter-spacing: 1px; /*So the text is not so compressed.*/
@@ -63,6 +68,18 @@ h2:after {
 	width: 100px;
 	margin: 0 auto; /* Centered */
 	margin-top: 30px;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+/* ----- PARAGRAPHS ----- */
+
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%; /* Centers this class. (15% + 70% + 15%) */
 }
 
 /* ----- BUTTONS ----- */
