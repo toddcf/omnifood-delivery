@@ -255,6 +255,10 @@ MEALS
 HOW IT WORKS
 -------------------------------------*/
 
+.section-steps {
+	background-color: #f4f4f4; /* Gives this section a slight offset to differentiate it from the other sections. */
+}
+
 /* iPhone image */
 .steps-box:first-child {
 	text-align: right; /* The iPhone image */
