@@ -304,3 +304,28 @@ HOW IT WORKS
 	width: auto;
 	margin-right: 10px;
 }
+
+/*-------------------------------------
+HOW IT WORKS
+-------------------------------------*/
+
+.cities {
+	list-style: none;
+	width: 100%;
+}
+
+.cities li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+/*.city {
+	width: 100%;
+}*/
+
+.city img {
+	width: 100%;
+	height: auto;
+}
+
