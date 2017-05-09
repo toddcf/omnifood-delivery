@@ -347,16 +347,6 @@ HOW IT WORKS
 CITIES
 -------------------------------------*/
 
-/*.section-cities {
-	width: 100%;
-}
-
-.box {
-	display: block;
-	float: left;
-	width: 23%;
-}*/
-
 /* City Images */
 .box img {
 	width: 100%;
@@ -367,4 +357,8 @@ CITIES
 .city-feature {
 	margin-bottom: 5px;
 }
+
+/*-------------------------------------
+TESTIMONIALS
+-------------------------------------*/
 
