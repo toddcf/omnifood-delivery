@@ -8,7 +8,7 @@
 - CSS3
   - `box-sizing: border-box;`
   - `text-rendering`
-  - `:after`
+  - `:before` and `:after`
   - `word-spacing` and `letter-spacing`
   - `line-height`
   - `link`, `visited`, `hover`, and `active`
@@ -19,3 +19,4 @@
   - `list-style: none;` for removing bullet points from lists.
   - `text-transform: uppercase;` to make all letters capital. `text-transform: capitalize` to capitalize only the first letter of each word.
   - `background-attachment: fixed;` to hold a background image in place, even when the user scrolls.
+  - `content` to add text to the site using CSS3.

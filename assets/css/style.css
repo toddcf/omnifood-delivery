@@ -246,6 +246,11 @@ FEATURES
 	margin-bottom: 30px;
 }
 
+.description {
+	text-align: justify;
+	letter-spacing: 1px;
+}
+
 /*-------------------------------------
 MEALS
 -------------------------------------*/
@@ -364,7 +369,7 @@ TESTIMONIALS
 -------------------------------------*/
 
 .section-testimonials {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(../img/food/back-customers.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) , url(../img/food/back-customers.jpg);
 	background-size: cover; /*Shows entire image*/
 	background-position: center; /*Centers the background*/
 	/*height: 100vh;*/ /*Sets section (class) height to match viewport height:*/
@@ -376,13 +381,29 @@ blockquote {
 	padding: 2%;
 	font-style: italic;
 	line-height: 145%;
+	text-align: justify;
+	position: relative; /* Because it is the parent of `blockquote:before`, which we are setting to `position: absolute;`.*/
+	margin-top: 40px;
+}
+
+blockquote:before {
+	content: "\201C";
+	font-size: 500%;
+	display: block; /* Puts the quotation mark on its own line. */
+	position: absolute;
+	top: -5px;
+	left: -5px;
 }
 
 cite {
 	font-size: 90%;
 	margin-top: 25px;
+	display: block; /* Puts cite on a new line. */
 }
 
 cite img {
-	
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
 }
