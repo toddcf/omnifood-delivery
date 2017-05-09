@@ -362,3 +362,15 @@ CITIES
 TESTIMONIALS
 -------------------------------------*/
 
+.section-testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(../img/food/back-customers.jpg);
+	background-size: cover; /*Shows entire image*/
+	background-position: center; /*Centers the background*/
+	height: 100vh; /*Sets section (class) height to match viewport height:*/
+}
+
+blockquote,
+cite,
+.section-testimonials h2 {
+	color: #fff;
+}
