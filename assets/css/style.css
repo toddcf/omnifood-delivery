@@ -407,3 +407,11 @@ cite img {
 	margin-right: 10px;
 	vertical-align: middle;
 }
+
+/*-------------------------------------
+PLANS
+-------------------------------------*/
+
+.plan-box li {
+	list-style: none;
+}
