@@ -379,5 +379,10 @@ blockquote {
 }
 
 cite {
+	font-size: 90%;
+	margin-top: 25px;
+}
+
+cite img {
 	
 }
