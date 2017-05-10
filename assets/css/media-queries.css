@@ -13,6 +13,7 @@
 
 /* iPad: 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+	
 	body { font-size: 18px; } /* All other font sizes are percentages and will adjust accordingly. */
 	
 	section { padding: 60px 0; } /* Reduce top and bottom padding so there is not too much white space on smaller screens. */
@@ -21,6 +22,21 @@
 		width: 80%; /* Increased -- was too narrow on smaller screens. */
 		margin-left: 10%; /* Must redo this math accordingly to center this class. (10% + 80% + 10%) */
 	}
+
+	.steps-box:first-child,
+	.steps-box:last-child {
+		margin-top: 10px; /* Reduce vertical whitespace. */
+	}
+
+	.works-step { margin-bottom: 40px; }
+
+	.works-step:last-of-type { margin-bottom: 60px; }
+
+	.app-screen { width: 50%; } /* Percentage of the .steps-box that it's in. */
+
+	.btn-app img { height: 48px; } /* Reduced by 2px to fit them on one line. */
+
+	.icon-small 
 
 }
 
