@@ -20,8 +20,10 @@
 
 	.long-copy {
 		width: 80%; /* Increased -- was too narrow on smaller screens. */
-		margin-left: 10%; /* Must redo this math accordingly to center this class. (10% + 80% + 10%) */
+		margin-left: 10%; /* Must recalculate accordingly to center this class. (10% + 80% + 10%) */
 	}
+
+	/* HOW IT WORKS */
 
 	.steps-box:first-child,
 	.steps-box:last-child {
@@ -36,7 +38,25 @@
 
 	.btn-app img { height: 48px; } /* Reduced by 2px to fit them on one line. */
 
-	.icon-small 
+	/* CITIES */
+
+	.icon-small {
+		width: 17px; /* Decreased from 30px wide. */
+		margin-right: 5px; /* Decreased from 5px. */
+	}
+
+	.city-feature { font-size: 77%; } /* Largest possible font that would keep each bullet point on one line. */
+
+	.plan-box {
+		width: 100%; /* Increased from 90%. */
+		margin-left: 0%; /* Must recalculate accordingly to center this class. (100% - 100% = 0%) */
+		font-size: 84%; /* Largest possible font that would keep each bullet point on one line. */
+	}
+
+	.plan-price {
+		font-size: 250%; /* Decreased from 300%. */
+		font-weight: 300; /* Increased back to normal because font-size was decreased. */
+	}
 
 }
 
