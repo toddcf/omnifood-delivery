@@ -3,8 +3,10 @@
 ## Techniques Learned
 
 - HTML5
-  - `blockquote`
-  - `cite`
+  - `<blockquote>`
+  - `<cite>`
+  - `<span>` to style only some of the text within a paragraph.
+  - `&nbsp;` instead of a normal space as a placeholder.
 - CSS3
   - `box-sizing: border-box;`
   - `text-rendering`
