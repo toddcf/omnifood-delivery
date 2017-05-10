@@ -504,3 +504,11 @@ input[type=checkbox] {
 .label {
 	text-align: right;
 }
+
+/*-------------------------------------
+FOOTER
+-------------------------------------*/
+
+footer ul {
+	list-style: none;
+}
