@@ -11,13 +11,16 @@
 	.row { padding: 0 2%; }
 }
 
-/* iPad (landscape mode): 1024px to */
-@media only screen and (max-width: 1024px) {
-
-}
-
-/* iPad (portrait mode): 768px to 1023px */
+/* iPad: 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+	body { font-size: 18px; } /* All other font sizes are percentages and will adjust accordingly. */
+	
+	section { padding: 60px 0; } /* Reduce top and bottom padding so there is not too much white space on smaller screens. */
+
+	.long-copy {
+		width: 80%; /* Increased -- was too narrow on smaller screens. */
+		margin-left: 10%; /* Must redo this math accordingly to center this class. (10% + 80% + 10%) */
+	}
 
 }
 
