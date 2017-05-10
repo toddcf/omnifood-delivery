@@ -1,2 +1,32 @@
 /* Media Queries */
 
+/* Smaller computer screens */
+@media only screen and (max-width: 1200px) {
+	.hero-text-box {
+		width: 100%; /* Instead of fixed width 1140px. */
+		padding: 0 2%; /* Because width was reset, must add left and right padding. */
+	}
+
+	/* All rows */
+	.row { padding: 0 2%; }
+}
+
+/* iPad (landscape mode): 1024px to */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* iPad (portrait mode): 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+}
+
+/* Medium Phones: 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Small Phones: 0px to 480px */
+@media only screen and (max-width: 480px) {
+
+}
