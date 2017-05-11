@@ -119,9 +119,31 @@
 		margin-left: 8%; /* Center the images. */
 	}
 
+	.footer-nav,
+	.social-links {
+		float: none;
+	}
+
+	.footer-nav {
+		width: 60%;
+		margin: 0 20%;
+	}
+
+	.footer-nav ul {
+		text-align: center;
+	}
+
+	.social-links {
+		margin-left: 30%;
+		margin-top: 20px;
+	}
+
 }
 
 /* Small Phones: 0px to 480px */
 @media only screen and (max-width: 480px) {
 
+	section { padding: 25px 0; } /* Decreased from 30px. */
+
+	.contact-form { width: 100%; } /* Increased from 80%. */
 }

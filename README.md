@@ -24,3 +24,7 @@
   - `content` to add text to the site using CSS3.
   - `overflow-x: hidden;` 
   - `display: none;` to hide elements.
+
+## Future Iterations
+
+- In media query 767px and lower, polish the centering all the links and social media navs.
