@@ -15,9 +15,17 @@ $( document ).ready( function() {
 	});
 
 	// Scroll on Button-Clicks:
+	
+	// I'm Hungry button:
 	$( ".js--scroll-to-plan" ).click( function() {
 		// Select HTML and BODY:
 		$( "html, body" ).animate( { scrollTop: $( ".js--section-plans" ).offset().top }, 1000);
+	});
+
+	// Show Me More button:
+	$( ".js--scroll-to-start" ).click( function() {
+		// Select HTML and BODY:
+		$( "html, body" ).animate( { scrollTop: $( ".js--section-features" ).offset().top }, 1000);
 	});
 
 });
