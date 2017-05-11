@@ -7,7 +7,8 @@ BASIC SETUP
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 *:focus { outline: none; } /* Removes automatic browser borders from form fields. */
@@ -132,6 +133,7 @@ a:visited {
 	text-decoration: none; /* No default underline */
 	border-bottom: 1px solid #e67e22; /* Our own custom underline */
 	padding-bottom: 1px; /* Space for underline */
+	-webkit-transition: border-bottom 0.2s, color 0.2s;
 	transition: border-bottom 0.2s, color 0.2s; /* Transition takes 0.2 seconds. */
 }
 
@@ -152,6 +154,7 @@ input[type=submit] {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s; /* Transition takes 0.2 seconds. */
 }
 
@@ -196,6 +199,7 @@ HEADER
 -------------------------------------*/
 
 header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))) , url(../img/food/hero.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(../img/food/hero.jpg);
 	background-size: cover; /*Shows entire image*/
 	background-position: center; /*Centers the background*/
@@ -208,7 +212,8 @@ header {
 	width: 1140px; /*Same width as the entire row*/
 	top: 50%; /*Vertically aligns the top of this div with the center of its parent div*/
 	left: 50%; /*Horizontally aligns the left side of this dive with the center of its parent div*/
-	transform: translate(-50%, -50%); /*Shifts the div so that its horizontal and vertical centers are what align with its parent div's center*/
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%); /*Shifts the div so that its horizontal and vertical centers are what align with its parent div's center*/
 }
 
 .logo {
@@ -236,6 +241,7 @@ header {
 	text-transform: uppercase;
 	font-size: 90%;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom 0.2;
 	transition: border-bottom 0.2;
 	padding: 8px 0;
 }
@@ -284,13 +290,18 @@ MEALS
 	opacity: 0.7;
 	width: 100%; /* 100% of its parent container, which is the <figure>. */
 	height: auto;
-	transform: scale(1.15); /* Zoom in 15% so that when we hover, we can zoom back out to normal. */
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15); /* Zoom in 15% so that when we hover, we can zoom back out to normal. */
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
 	opacity: 1;
-	transform: scale(1.03); /* When hovering, zoom back out to normal size -- plus 3% to prevent a white gap from appearing at the bottom of the image. */
+	-webkit-transform: scale(1.03);
+	        transform: scale(1.03); /* When hovering, zoom back out to normal size -- plus 3% to prevent a white gap from appearing at the bottom of the image. */
 }
 
 /*-------------------------------------
@@ -362,6 +373,7 @@ TESTIMONIALS
 -------------------------------------*/
 
 .section-testimonials {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))) , url(../img/food/back-customers.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) , url(../img/food/back-customers.jpg);
 	background-size: cover; /*Shows entire image*/
 	background-position: center; /*Centers the background*/
@@ -412,7 +424,8 @@ PLANS
 	border-radius: 5px;
 	width: 90%;
 	margin-left: 5%; /* Centers it inside the parent div. (100% - 90%) / 2 = 5% */
-	box-shadow: 0 2px 2px #e3e3e3;
+	-webkit-box-shadow: 0 2px 2px #e3e3e3;
+	        box-shadow: 0 2px 2px #e3e3e3;
 }
 
 .plan-box div {
@@ -524,6 +537,7 @@ footer p {
 	text-decoration: none;
 	border: 0;
 	color: #888;
+	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
@@ -553,5 +567,6 @@ footer p {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
