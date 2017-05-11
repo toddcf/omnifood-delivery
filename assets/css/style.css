@@ -248,6 +248,13 @@ header {
 	border-bottom: 2px solid #e67e22;
 }
 
+.logo {
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
 /* ----- Sticky Nav ----- */
 .sticky {
 	position: fixed; /* Sticky Nav stays in position, even during scrolling. */
@@ -257,6 +264,7 @@ header {
 	/* Start element at top left corner: */
 	top: 0;
 	left: 0;
+	z-index: 9999; /* Set to maximum allowed, so sticky nav is always on top. */
 }
 
 .sticky .main-nav { margin-top: 18px; } /* Reduce margin-top when in .sticky. */
@@ -269,13 +277,6 @@ header {
 
 .sticky .logo-black { display: block; } /* If black logo is inside .sticky, display it as a block. */
 .sticky .logo { display: none; } /* And hide white logo if it's inside .sticky. */
-
-.logo {
-	height: 100px;
-	width: auto;
-	float: left;
-	margin-top: 20px;
-}
 
 .logo-black {
 	display: none; /* Hide black logo under normal circumstances. */
