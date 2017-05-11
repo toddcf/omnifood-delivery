@@ -216,16 +216,10 @@ header {
 	        transform: translate(-50%, -50%); /*Shifts the div so that its horizontal and vertical centers are what align with its parent div's center*/
 }
 
-.logo {
-	height: 100px;
-	width: auto;
-	float: left;
-	margin-top: 20px;
-}
-
 /* ----- NAV ----- */
 
 /* ----- Main Nav ----- */
+
 .main-nav {
 	float: right;
 	list-style: none; /* Remove bullet points */
@@ -259,9 +253,36 @@ header {
 	position: fixed; /* Sticky Nav stays in position, even during scrolling. */
 	width: 100%;
 	background-color: rgba( 255, 255, 255, 0.98 ); /* White, with slight transparency */
+	box-shadow: 0 2px 2px #efefef; /* To make nav more visible against white backgrounds. */
 	/* Start element at top left corner: */
 	top: 0;
 	left: 0;
+}
+
+.sticky .main-nav { margin-top: 18px; } /* Reduce margin-top when in .sticky. */
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding: 18px 0; /* Vertical position of underline when hovering. */
+	color: #555;
+}
+
+.sticky .logo-black { display: block; } /* If black logo is inside .sticky, display it as a block. */
+.sticky .logo { display: none; } /* And hide white logo if it's inside .sticky. */
+
+.logo {
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+.logo-black {
+	display: none; /* Hide black logo under normal circumstances. */
+	height: 50px;
+	width: auto;
+	float: left;
+	margin: 5px 0;
 }
 
 /*-------------------------------------
