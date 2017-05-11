@@ -58,6 +58,12 @@
 		font-weight: 300; /* Increased back to normal because font-size was decreased. */
 	}
 
+	/* CONTACT FORM */
+
+	.contact-form {
+		width: 80%; /* Increased from 60%. */
+	}
+
 }
 
 /* Medium Phones: 481px to 767px */
