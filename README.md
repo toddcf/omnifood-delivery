@@ -6,6 +6,7 @@
 - CSS3
   - Autoprefixer
 - jQuery
+  - Waypoints (to trigger functions when an element is scrolled to).
 
 ## Techniques Learned
 
