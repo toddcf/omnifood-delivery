@@ -1,5 +1,12 @@
 # Omnifood
 
+## Technologies Used
+
+- HTML5
+- CSS3
+  - Autoprefixer
+- jQuery
+
 ## Techniques Learned
 
 - HTML5
