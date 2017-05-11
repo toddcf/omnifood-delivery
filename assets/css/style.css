@@ -12,12 +12,14 @@ BASIC SETUP
 
 *:focus { outline: none; } /* Removes automatic browser borders from form fields. */
 
-html {
+html,
+body {
 	color: #555; /*grey*/
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 .clearfix { zoom: 1; }

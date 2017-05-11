@@ -69,6 +69,56 @@
 /* Medium Phones: 481px to 767px */
 @media only screen and (max-width: 767px) {
 
+	body { font-size: 16px; } /* Decreased. All other font sizes are percentages and will adjust accordingly. */
+
+	section { padding: 30px 0; } /* Reduce top and bottom padding even more so there is not too much white space on smaller screens. */
+
+	.row,
+	.hero-text-box {
+		padding: 0 4%; /* Increased. */
+	}
+
+	.col {
+		width: 100%; /* Ensures that the columns will stack instead of being side-by-side. */
+		margin: 0 0 4% 0; /* Override and add vertical space between columns when stacked. */
+	}
+
+	.main-nav { display: none; } /* Hide for now. We will make a new one with jQuery later. */
+
+	.long-copy {
+		width: 100%; /* Increased. */
+		margin-left: 0%; /* Must recalculate accordingly to center this class. (100% - 100% = 0%) */
+		text-align: justify;
+	}
+
+	h1 { font-size: 180%; } /* Decreased again. */
+	h2 { font-size: 150%; } /* Decreased again. */
+
+	/* HOW IT WORKS */
+
+	.works-step { margin-bottom: 30px; } /* Reduce whitespace. */
+
+	.works-step:last-of-type { margin-bottom: 30px; } /* Reduce whitespace. */
+
+	.works-step div {
+		height: 40px; /* Decreased. */
+		width: 40px; /* Same as height, so the border can be circular. */
+		padding: 5px; /* Helps center the numbers vertically within the circles. */
+		margin-right: 15px; /* Spacing between numbers and paragraph text. */
+		font-size: 120%;
+	}
+
+	.steps-box:first-child {
+		text-align: center; /* The iPhone image */
+		margin: 10px 0;
+	}
+
+	.btn-app img {
+		height: 50px;
+		width: auto;
+		margin-left: 8%; /* Center the images. */
+	}
+
 }
 
 /* Small Phones: 0px to 480px */
