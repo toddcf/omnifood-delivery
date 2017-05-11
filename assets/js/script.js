@@ -1,8 +1,16 @@
 $( document ).ready( function() {
 
-	// $( "h1" ).click( function() {
-	// 	// "this" now refers to "h1" above.
-	// 	$( this ).css( "background-color", "#ff0000" );
-	// });
+	$( ".js--section-features" ).waypoint( function( direction ) {
+		// If user scrolls down, add "sticky" class to <nav> element:
+		if ( direction == "down" ) {
+			$( "nav" ).addClass( "sticky" );
+		}
+		// If user scrolls up, remove "sticky" class from <nav> element:
+		else {
+			$( "nav" ).removeClass( "sticky" );
+		}
+	}, {
+		offset: "60px;"
+	});
 
 });
