@@ -223,6 +223,9 @@ header {
 	margin-top: 20px;
 }
 
+/* ----- NAV ----- */
+
+/* ----- Main Nav ----- */
 .main-nav {
 	float: right;
 	list-style: none; /* Remove bullet points */
@@ -249,6 +252,16 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
 	border-bottom: 2px solid #e67e22;
+}
+
+/* ----- Sticky Nav ----- */
+.sticky {
+	position: fixed; /* Sticky Nav stays in position, even during scrolling. */
+	width: 100%;
+	background-color: rgba( 255, 255, 255, 0.98 ); /* White, with slight transparency */
+	/* Start element at top left corner: */
+	top: 0;
+	left: 0;
 }
 
 /*-------------------------------------
