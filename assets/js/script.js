@@ -63,6 +63,8 @@ $( document ).ready( function() {
 	// Features Section:
 	$( ".js--wp-1" ).waypoint( function( direction ) {
 		$( ".js--wp-1" ).addClass( "animated fadeIn" );
+	}, {
+		offset: "50%"
 	});
 	// We actually aren't using "direction" in this case, because this animation will only happen once.
 
