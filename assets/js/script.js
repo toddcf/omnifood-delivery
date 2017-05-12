@@ -16,32 +16,44 @@ $( document ).ready( function() {
 
 	// Scroll on Button-Clicks:
 	
-	// I'm Hungry button:
-	$( ".js--scroll-to-plan" ).click( function() {
+	// I'm Hungry & Plans buttons:
+	$( ".js--scroll-to-plans" ).click( function() {
 		// Select HTML and BODY:
-		$( "html, body" ).animate( { scrollTop: $( ".js--section-plans" ).offset().top }, 1000);
+		$( "html, body" ).animate( { scrollTop: $( ".js--section-plans" ).offset().top }, 1000 );
 	});
 
-	// Show Me More button:
-	$( ".js--scroll-to-start" ).click( function() {
+	// Show Me More & Features buttons:
+	$( ".js--scroll-to-features" ).click( function() {
 		// Select HTML and BODY:
-		$( "html, body" ).animate( { scrollTop: $( ".js--section-features" ).offset().top }, 1000);
+		$( "html, body" ).animate( { scrollTop: $( ".js--section-features" ).offset().top }, 1000 );
 	});
 
-	// Navigation Scrolling (using jQuery snippets):
-	$( function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+	// Works button:
+	$( ".js--scroll-to-works" ).click( function() {
+		// Select HTML and BODY:
+		$( "html, body" ).animate( { scrollTop: $( ".js--section-works" ).offset().top }, 1000 );
+	});
 
-				var target = $(this.hash);
+	// Cities button:
+	$( ".js--scroll-to-cities" ).click( function() {
+		// Select HTML and BODY:
+		$( "html, body" ).animate( { scrollTop: $( ".js--section-cities" ).offset().top }, 1000 );
+	});
+	
+	// ALTERNATIVE METHOD THAT DID NOT WORK:
+	// $( function() {
+	// 	$( "a[href*=#]:not([href=#])" ).click( function() {
+	// 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	// 			var target = $(this.hash);
 				
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate( { scrollTop: target.offset().top }, 1000);
-					return false;
-				}
-			}
-		});
-	});
+	// 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	// 			if (target.length) {
+	// 				$( "html, body" ).animate( { scrollTop: target.offset().top }, 1000);
+	// 				return false;
+	// 			}
+	// 		}
+	// 	});
+	// });
 
 });
