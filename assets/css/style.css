@@ -605,3 +605,15 @@ footer p {
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
+
+/*-------------------------------------
+ANIMATIONS
+-------------------------------------*/
+
+.js--wp-1 {
+	opacity: 0;
+}
+
+.js--wp-1.animated {
+	opacity: 1;
+}

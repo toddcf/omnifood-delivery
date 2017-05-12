@@ -1,6 +1,7 @@
 $( document ).ready( function() {
 
-	// Sticky Nav:
+	// STICKY NAV
+
 	$( ".js--section-features" ).waypoint( function( direction ) {
 		// If user scrolls down, add "sticky" class to <nav> element:
 		if ( direction == "down" ) {
@@ -14,7 +15,8 @@ $( document ).ready( function() {
 		offset: "60px;"
 	});
 
-	// Scroll on Button-Clicks:
+
+	// BUTTON CLICK SCROLLING
 	
 	// I'm Hungry & Plans buttons:
 	$( ".js--scroll-to-plans" ).click( function() {
@@ -55,5 +57,16 @@ $( document ).ready( function() {
 	// 		}
 	// 	});
 	// });
+
+	// ANIMATIONS ON SCROLL
+
+	// Features Section:
+	$( ".js--wp-1" ).waypoint( function( direction ) {
+		$( ".js--wp-1" ).addClass( "animated fadeIn" );
+	});
+	// We actually aren't using "direction" in this case, because this animation will only happen once.
+
+
+
 
 });
