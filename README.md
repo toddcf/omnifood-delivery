@@ -32,6 +32,10 @@
   - `content` to add text to the site using CSS3.
   - `overflow-x: hidden;` 
   - `display: none;` to hide elements.
+  - Animate.css.
+  - `animation-duration`
+- jQuery
+  - Triggering animations on scroll.
 
 ## Cross-Browser Compatibility Issues To Fix
 
@@ -39,10 +43,7 @@
 
 1. "Show Me More" button's bottom border does not always display.
 
-### Safari
-
-1. Header is messed up -- but Safari is no longer supported on Windows, so I can't update it and I don't know what my changes will look like elsewhere.
-
 ## Future Iterations
 
+- Favicon (logo).
 - In media query 767px and lower, polish the centering all the links and social media navs.
