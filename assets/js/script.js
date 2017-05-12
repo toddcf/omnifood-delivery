@@ -68,7 +68,26 @@ $( document ).ready( function() {
 	});
 	// We actually aren't using "direction" in this case, because this animation will only happen once.
 
+	// iPhone Image:
+	$( ".js--wp-2" ).waypoint( function( direction ) {
+		$( ".js--wp-2" ).addClass( "animated fadeInUp" );
+	}, {
+		offset: "50%"
+	});
 
+	// Cities:
+	$( ".js--wp-3" ).waypoint( function( direction ) {
+		$( ".js--wp-3" ).addClass( "animated fadeIn" );
+	}, {
+		offset: "50%"
+	});
+
+	// Plans:
+	$( ".js--wp-4" ).waypoint( function( direction ) {
+		$( ".js--wp-4" ).addClass( "animated pulse" );
+	}, {
+		offset: "50%"
+	});
 
 
 });
