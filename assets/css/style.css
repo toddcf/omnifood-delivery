@@ -255,6 +255,19 @@ header {
 	margin-top: 20px;
 }
 
+/* ----- Mobile-Responsive Nav ----- */
+
+.mobile-nav-icon {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer; /* Without the href inside the <a>, we need to specify this. */
+	display: none; /* Default is to not see this, until screen size changes. */
+}
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #fff;
+}
+
 /* ----- Sticky Nav ----- */
 .sticky {
 	position: fixed; /* Sticky Nav stays in position, even during scrolling. */

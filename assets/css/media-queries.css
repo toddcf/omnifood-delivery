@@ -83,16 +83,46 @@
 		margin: 0 0 4% 0; /* Override and add vertical space between columns when stacked. */
 	}
 
-	.main-nav { display: none; } /* Hide for now. We will make a new one with jQuery later. */
+	.main-nav {
+		float: left;
+		margin-top: 35px;
+		margin-left: 25px;
+		display: none;
+	}
+
+	.main-nav li { display: block; } /* Stack the links vertically. */
+
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		display: block;
+		border: 0; /* Can't hover on a mobile device, so don't need a border. */
+		padding: 10px 0;
+		font-size: 100%;
+	}
+
+	.mobile-nav-icon {
+		display: inline-block; /* Make this visible at this screen size. */
+	}
+
+	.sticky .main-nav { margin-top: 10px; } /* Reduced again from 18px. */
+
+	.sticky .mobile-nav-icon { margin-top: 10px; }
+
+	.sticky .mobile-nav-icon i { color: #555; } /* Set the icon color when sticky. */
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		padding: 10px 0; /* Vertical position of underline when hovering. Decreased from 18px. */
+	}
+
+	h1 { font-size: 180%; } /* Decreased again. */
+	h2 { font-size: 150%; } /* Decreased again. */
 
 	.long-copy {
 		width: 100%; /* Increased. */
 		margin-left: 0%; /* Must recalculate accordingly to center this class. (100% - 100% = 0%) */
 		text-align: justify;
 	}
-
-	h1 { font-size: 180%; } /* Decreased again. */
-	h2 { font-size: 150%; } /* Decreased again. */
 
 	/* HOW IT WORKS */
 

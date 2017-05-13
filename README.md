@@ -46,4 +46,6 @@
 ## Future Iterations
 
 - Favicon (logo).
+- Center the icons in the Features section.
+- Try making the Cities fadeIn one after another by a split second each.
 - In media query 767px and lower, polish the centering all the links and social media navs.

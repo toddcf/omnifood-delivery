@@ -89,5 +89,15 @@ $( document ).ready( function() {
 		offset: "50%"
 	});
 
+	// MOBILE NAVIGATION
+
+	$( ".js--nav-icon" ).click( function() {
+		
+		var nav = $( ".js--main-nav" )
+
+		// Open and close the box:
+		nav.slideToggle( 200 );
+	});
+
 
 });
