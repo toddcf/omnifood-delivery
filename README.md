@@ -37,15 +37,12 @@
 - jQuery
   - Triggering animations on scroll.
 
-## Cross-Browser Compatibility Issues To Fix
-
-### Firefox
-
-1. "Show Me More" button's bottom border does not always display.
-
 ## Future Iterations
 
 - Favicon (logo).
 - Center the icons in the Features section.
-- Try making the Cities fadeIn one after another by a split second each.
+- Try making the Cities fadeIn one after another by a split second each. (Will have to give each one its own class.)
 - In media query 767px and lower, polish the centering all the links and social media navs.
+- Firefox only: "Show Me More" button's bottom border does not always display.
+- Fix: When you shrink the screen and the mobile nav icon appears, if you click it and then click the X to close it, and then re-expand the browser size, the nav does not reappear. (Note that if you only click it once to expand the drop-down, when you re-exapnd the browser size, the .main-nav is still visible.) If you check the console log, `.main-nav` now has a rule of `display: none` for some reason.
+  - Solution: https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/questions/821648

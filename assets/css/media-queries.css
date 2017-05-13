@@ -1,5 +1,9 @@
 /* Media Queries */
 
+@media only screen and (min-width: 1201px) {
+	.main-nav { display: inline-block; }
+}
+
 /* Smaller computer screens */
 @media only screen and (max-width: 1200px) {
 	.hero-text-box {
@@ -9,6 +13,8 @@
 
 	/* All rows */
 	.row { padding: 0 2%; }
+
+	.main-nav { display: inline-block; }
 }
 
 /* iPad: 768px to 1023px */
@@ -17,6 +23,8 @@
 	body { font-size: 18px; } /* All other font sizes are percentages and will adjust accordingly. */
 	
 	section { padding: 60px 0; } /* Reduce top and bottom padding so there is not too much white space on smaller screens. */
+
+	.main-nav { display: inline-block; }
 
 	.long-copy {
 		width: 80%; /* Increased -- was too narrow on smaller screens. */
