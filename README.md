@@ -39,8 +39,7 @@
 
 ## Future Iterations
 
-- Favicon (logo).
 - Center the icons in the Features section.
 - Try making the Cities fadeIn one after another by a split second each. (Will have to give each one its own class.)
-- In media query 767px and lower, polish the centering all the links and social media navs.
+- In media query 767px and lower, polish the centering of all the links and social media navs.
 - Firefox only: "Show Me More" button's bottom border does not always display.
