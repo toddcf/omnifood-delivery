@@ -518,13 +518,32 @@ PLANS
 CONTACT FORM & MAP
 -------------------------------------*/
 
+.map-box {
+	width: 100%;
+	height: 560px;
+	position: relative; /* Must specify this because the form-box inside it has an absolute position. */
+}
+
 .map {
 	width: 100%;
-	height: 500px;
+	height: 560px;
+	position: relative; /* Set to relative so that the z-index below will work. */
+	z-index: 0; /* To push it to the background. */
+}
+
+.form-box {
+	width: 50%; /* So it overlaps exactly half of the map. */
+	height: 560px; /* So it's the same height as the map and its parent div. */
+	position: absolute; /* Because we are positioning it to the right. */
+	top: 0; /* Because we want the form-box to be at the top of its parent div (map-box). */
+	right: 0; /* Because we are positioning it all the way to the right. */
+	background-color: rgba(255, 255, 255, 0.8); /* To give it an almost-white background. */
+	z-index: 10; /* To pull it to the foreground. */
+	padding-top: 40px;
 }
 
 .contact-form {
-	width: 60%;
+	width: 90%;
 	margin: 0 auto; /* Center the contact form. */
 }
 
