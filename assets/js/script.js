@@ -91,11 +91,22 @@ $( document ).ready( function() {
 
 	// MAP
 
-	new GMaps( {
+	// Map starting location:
+	var map = new GMaps( {
 		div: '.map',
 		lat: 37.7576793,
 		lng: -122.30764,
 		zoom: 12
+	});
+
+	// Map marker:
+	map.addMarker( {
+		lat: 37.758952,
+		lng: -122.4132907,
+		title: 'Lima',
+		click: function(e) {
+			alert('You clicked in this marker');
+		}
 	});
 
 	// MOBILE NAVIGATION
