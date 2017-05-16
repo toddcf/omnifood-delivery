@@ -515,8 +515,13 @@ PLANS
 .plan-price-meal { font-size: 80%; }
 
 /*-------------------------------------
-CONTACT FORM
+CONTACT FORM & MAP
 -------------------------------------*/
+
+.map {
+	width: 100%;
+	height: 500px;
+}
 
 .contact-form {
 	width: 60%;

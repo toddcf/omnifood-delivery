@@ -89,6 +89,14 @@ $( document ).ready( function() {
 		offset: "50%"
 	});
 
+	// MAP
+
+	new GMaps({
+		div: '.map',
+		lat: -12.043333,
+		lng: -77.028333
+	});
+
 	// MOBILE NAVIGATION
 
 	// Mobile Nav
