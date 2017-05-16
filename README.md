@@ -7,6 +7,7 @@
   - Autoprefixer
 - jQuery
   - Waypoints (to trigger functions when an element is scrolled to).
+  - gmaps.js (map plugin).
 
 ## Techniques Learned
 
@@ -42,4 +43,4 @@
 - Center the icons in the Features section.
 - Try making the Cities fadeIn one after another by a split second each. (Will have to give each one its own class.)
 - In media query 767px and lower, polish the centering of all the links and social media navs.
-- Firefox only: "Show Me More" button's bottom border does not always display.
+- Firefox and iPhone: "Show Me More" button's bottom border does not always display. May have to add bottom padding.
