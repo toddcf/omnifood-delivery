@@ -91,10 +91,11 @@ $( document ).ready( function() {
 
 	// MAP
 
-	new GMaps({
+	new GMaps( {
 		div: '.map',
-		lat: -12.043333,
-		lng: -77.028333
+		lat: 37.7576793,
+		lng: -122.30764,
+		zoom: 12
 	});
 
 	// MOBILE NAVIGATION
