@@ -103,9 +103,9 @@ $( document ).ready( function() {
 	map.addMarker( {
 		lat: 37.758952,
 		lng: -122.4132907,
-		title: 'Lima',
-		click: function(e) {
-			alert('You clicked in this marker');
+		title: 'San Francisco',
+		infoWindow: {
+			content: '<p>Our San Francisco HQ</p>'
 		}
 	});
 
@@ -137,7 +137,51 @@ $( document ).ready( function() {
 		var nav = $( ".js--main-nav" );
 		var icon = $( ".js--nav-icon i" );
 
-		if ( $( window ).width() > 767 ) {
+		// If the screen is made smaller than 1024, redraw the map:
+		if ( $( window ).width() < 1024 ) {
+
+			// Map starting location:
+			var map = new GMaps( {
+				div: '.map',
+				lat: 37.758952,
+				lng: -122.4132907,
+				zoom: 12
+			});
+
+			// Map marker:
+			map.addMarker( {
+				lat: 37.758952,
+				lng: -122.4132907,
+				title: 'San Francisco',
+				infoWindow: {
+					content: '<p>Our San Francisco HQ</p>'
+				}
+			});
+		}
+
+		// If the screen is then made larger than 1024 again, re-redraw the map.
+		else if ( $( window ).width() > 1024 ) {
+
+			// Map starting location:
+			var map = new GMaps( {
+				div: '.map',
+				lat: 37.7576793,
+				lng: -122.30764,
+				zoom: 12
+			});
+
+			// Map marker:
+			map.addMarker( {
+				lat: 37.758952,
+				lng: -122.4132907,
+				title: 'San Francisco',
+				infoWindow: {
+					content: '<p>Our San Francisco HQ</p>'
+				}
+			});
+		}
+
+		else if ( $( window ).width() > 767 ) {
 			nav.css( "display", "block" );
 			icon.addClass( "ion-close-round" );
 			icon.removeClass( "ion-navicon-round" );

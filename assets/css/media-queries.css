@@ -66,10 +66,30 @@
 		font-weight: 300; /* Increased back to normal because font-size was decreased. */
 	}
 
-	/* CONTACT FORM */
+	/* CONTACT FORM & MAP */
+
+	.map-box {
+		width: 100%;
+		height: auto;
+		position: relative; /* Must specify this because the form-box inside it has an absolute position. */
+	}
+
+	.map {
+		width: 100%;
+		height: 300px;
+		position: relative; /* Set to relative so that the z-index below will work. */
+		z-index: 0; /* To push it to the background. */
+	}
+
+	.form-box {
+		width: 100%;
+		height: auto;
+		position: relative;
+		padding: 30px 0;
+	}
 
 	.contact-form {
-		width: 80%; /* Increased from 60%. */
+		width: 90%; /* Increased from 60%. */
 	}
 
 }
