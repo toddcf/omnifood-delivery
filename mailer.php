@@ -12,11 +12,11 @@
         exit;
     }
 
-    // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "hello@webdesigncourse.co";
+    // Set the recipient email address:
+    $recipient = "toddcf@toddcf.com";
 
     // Set the email subject.
-    $subject = "New contact from $name";
+    $subject = "Omnifood email from $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";
