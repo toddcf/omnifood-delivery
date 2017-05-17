@@ -520,20 +520,20 @@ CONTACT FORM & MAP
 
 .map-box {
 	width: 100%;
-	height: 560px;
+	height: 650px;
 	position: relative; /* Must specify this because the form-box inside it has an absolute position. */
 }
 
 .map {
 	width: 100%;
-	height: 560px;
+	height: 650px;
 	position: relative; /* Set to relative so that the z-index below will work. */
 	z-index: 0; /* To push it to the background. */
 }
 
 .form-box {
 	width: 50%; /* So it overlaps exactly half of the map. */
-	height: 560px; /* So it's the same height as the map and its parent div. */
+	height: 650px; /* So it's the same height as the map and its parent div. */
 	position: absolute; /* Because we are positioning it to the right. */
 	top: 0; /* Because we want the form-box to be at the top of its parent div (map-box). */
 	right: 0; /* Because we are positioning it all the way to the right. */
@@ -564,6 +564,25 @@ input[type=checkbox] {
 }
 
 .label { text-align: right; }
+
+.form-messages {
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 400;
+	color: #fff;
+}
+
+.success {
+	background-color: rgba( 38, 191, 68, 0.75 );
+}
+
+.error {
+	background-color: rgba( 209, 46, 46, 0.75 );
+}
 
 /*-------------------------------------
 FOOTER
