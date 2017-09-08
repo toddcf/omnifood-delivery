@@ -1,10 +1,11 @@
 # Omnifood
 
+![Omnifood](https://github.com/toddcf/omnifood-delivery/blob/master/assets/img/food/hero.jpg "Omnifood")
+
 ## Technologies Used
 
 - HTML5
 - CSS3
-  - Autoprefixer
 - jQuery
   - Waypoints (to trigger functions when an element is scrolled to).
   - gmaps.js (map plugin).
