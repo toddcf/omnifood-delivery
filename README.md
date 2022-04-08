@@ -2,6 +2,13 @@
 
 ![Omnifood](https://github.com/toddcf/omnifood-delivery/blob/master/assets/img/food/hero.jpg "Omnifood")
 
+
+## Live Site
+
+- GH Pages: https://toddcf.github.io/omnifood-delivery/
+- Heroku: https://omnifood-delivery.herokuapp.com/ (will be phased out)
+
+
 ## Technologies Used
 
 - HTML5
