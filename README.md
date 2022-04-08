@@ -48,6 +48,13 @@
 
 ## Future Iterations
 
+- Discontinue the Heroku version, and delete all the `php` files that Heroku required.
+- Update my portfolio site to point to the GH Pages URL instead of Heroku.
+- Reverse the order of the CSS (to mobile-first).
+- Minimize the images.
+- Minify all the files.
+- Rename `master` branch to `main`.
+- Convert any jQuery to vanilla JS.
 - Center the icons in the Features section.
 - Try making the Cities fadeIn one after another by a split second each. (Will have to give each one its own class.)
 - In media query 767px and lower, polish the centering of all the links and social media navs.
