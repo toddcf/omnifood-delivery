@@ -53,7 +53,7 @@
 - Reverse the order of the CSS (to mobile-first).
 - Minimize the images.
 - Minify all the files.
-- Rename `master` branch to `main`.
+- Rename `master` branch to `main`: https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/
 - Convert any jQuery to vanilla JS.
 - Center the icons in the Features section.
 - Try making the Cities fadeIn one after another by a split second each. (Will have to give each one its own class.)
