@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*color: #e67e22;*/
 
 /*-------------------------------------
@@ -685,9 +686,70 @@ ANIMATIONS
 	        animation-duration: 1s;
 }
 
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
+.js--wp-1.active,
+.js--wp-2.active,
+.js--wp-3.active {
 	opacity: 1;
 }
 
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+ 
+.active {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}

@@ -17,6 +17,75 @@ const stickyNavHandler = {
 
 stickyNavHandler.init();
 
+// ANIMATIONS ON SCROLL
+// See JS30 #13.
+// Debounce limits how many times per second a function can be invoked:
+function debounce(func, wait = 20, immediate = true) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+}
+
+const sliderImages = document.querySelectorAll('.animate'); // Change to the correct classname.
+
+function checkSlide(e) {
+	sliderImages.forEach(sliderImage => {
+		// Animate each image when 50% of it is showing:
+		const slideInAt = (window.scrollY + window.innerHeight) - (sliderImage.clientHeight / 2);
+		
+		// Animate back out when scrolled up:
+		// Calculate how far the image is from the top of the screen, plus the height of the image:
+		const imageBottom = sliderImage.offsetTop + sliderImage.clientHeight;
+
+		// Confirm that the slide in value is greater than where the top of the image is:
+		const isHalfShown = slideInAt > sliderImage.offsetTop;
+
+		// Check that user has not scrolled all the way past the image:
+		const isNotScrolledPast = window.scrollY < imageBottom;
+
+		// If the image is half shown and not scrolled past, animate it:
+		
+		if (isHalfShown && isNotScrolledPast) {
+			console.log('isHalfShown && isNotScrolledPast condition met.')
+			sliderImage.classList.add('active');
+			const sliderImageClasses = sliderImage.classList;
+			if (
+				sliderImageClasses.contains('js--wp-1') ||
+				sliderImageClasses.contains('js--wp-3')
+			) {
+				sliderImage.classList.add('fadeIn');
+			} else if (sliderImageClasses.contains('js--wp-2')) {
+				sliderImage.classList.add('fadeInUp');
+			} else if (sliderImageClasses.contains('js--wp-4')) {
+				sliderImage.classList.add('pulse');
+			}
+		}
+		// Otherwise, hide it again (but this iteration is breaking things):
+		// else {
+		// 	sliderImage.classList.remove('active');
+		// 	if (sliderImageClasses.contains('fadeIn')) {
+		// 		sliderImage.classList.remove('fadeIn');
+		// 	} else if (sliderImageClasses.contains('fadeInUp')) {
+		// 		sliderImage.classList.remove('fadeInUp');
+		// 	} else if (sliderImageClasses.contains('pulse')) {
+		// 		sliderImage.classList.remove('pulse');
+		// 	}
+		// }
+	});
+}
+
+window.addEventListener('scroll', debounce(checkSlide));
+
+
 // Previous jQuery version:
 $( document ).ready( function() {
 
@@ -46,57 +115,26 @@ $( document ).ready( function() {
 		$( "html, body" ).animate( { scrollTop: $( ".js--section-cities" ).offset().top }, 1000 );
 	});
 	
-	// ANIMATIONS ON SCROLL
-	// See JS30 #13.
-
-	// Features Section:
-	$( ".js--wp-1" ).waypoint( function( direction ) {
-		$( ".js--wp-1" ).addClass( "animated fadeIn" );
-	}, {
-		offset: "50%"
-	});
-	// We actually aren't using "direction" in this case, because this animation will only happen once.
-
-	// iPhone Image:
-	$( ".js--wp-2" ).waypoint( function( direction ) {
-		$( ".js--wp-2" ).addClass( "animated fadeInUp" );
-	}, {
-		offset: "50%"
-	});
-
-	// Cities:
-	$( ".js--wp-3" ).waypoint( function( direction ) {
-		$( ".js--wp-3" ).addClass( "animated fadeIn" );
-	}, {
-		offset: "50%"
-	});
-
-	// Plans:
-	$( ".js--wp-4" ).waypoint( function( direction ) {
-		$( ".js--wp-4" ).addClass( "animated pulse" );
-	}, {
-		offset: "50%"
-	});
-
+	
 	// MAP
 
 	// Map starting location:
-	var map = new GMaps( {
-		div: '.map',
-		lat: 37.7576793,
-		lng: -122.30764,
-		zoom: 12
-	});
+	// var map = new GMaps( {
+	// 	div: '.map',
+	// 	lat: 37.7576793,
+	// 	lng: -122.30764,
+	// 	zoom: 12
+	// });
 
-	// Map marker:
-	map.addMarker( {
-		lat: 37.758952,
-		lng: -122.4132907,
-		title: 'San Francisco',
-		infoWindow: {
-			content: '<p>Our San Francisco HQ</p>'
-		}
-	});
+	// // Map marker:
+	// map.addMarker( {
+	// 	lat: 37.758952,
+	// 	lng: -122.4132907,
+	// 	title: 'San Francisco',
+	// 	infoWindow: {
+	// 		content: '<p>Our San Francisco HQ</p>'
+	// 	}
+	// });
 
 	// MOBILE NAVIGATION
 
