@@ -218,6 +218,10 @@ header {
 
 /* ----- NAV ----- */
 
+.nav {
+	transition: 225ms;
+}
+
 /* ----- Main Nav ----- */
 
 .main-nav {

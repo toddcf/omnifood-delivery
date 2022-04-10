@@ -1,20 +1,24 @@
+// See JS30 #24.
+const stickyNavHandler = {
+	nav: document.querySelector('.nav'),
+	stick: () => {
+		if (window.scrollY >= stickyNavHandler.nav.clientHeight / 2) {
+			stickyNavHandler.nav.classList.add('sticky');
+			document.body.style.paddingTop = `${stickyNavHandler.nav.offsetHeight}px`;
+		} else {
+			stickyNavHandler.nav.classList.remove('sticky');
+			document.body.style.paddingTop = 0;
+		}
+	},
+	init: () => {
+		window.addEventListener('scroll', stickyNavHandler.stick);
+	}
+}
+
+stickyNavHandler.init();
+
+// Previous jQuery version:
 $( document ).ready( function() {
-
-	// STICKY NAV
-
-	$( ".js--section-features" ).waypoint( function( direction ) {
-		// If user scrolls down, add "sticky" class to <nav> element:
-		if ( direction == "down" ) {
-			$( "nav" ).addClass( "sticky" );
-		}
-		// If user scrolls up, remove "sticky" class from <nav> element:
-		else {
-			$( "nav" ).removeClass( "sticky" );
-		}
-	}, {
-		offset: "60px;"
-	});
-
 
 	// BUTTON CLICK SCROLLING
 	
@@ -42,23 +46,8 @@ $( document ).ready( function() {
 		$( "html, body" ).animate( { scrollTop: $( ".js--section-cities" ).offset().top }, 1000 );
 	});
 	
-	// ALTERNATIVE METHOD THAT DID NOT WORK:
-	// $( function() {
-	// 	$( "a[href*=#]:not([href=#])" ).click( function() {
-	// 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	// 			var target = $(this.hash);
-				
-	// 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	// 			if (target.length) {
-	// 				$( "html, body" ).animate( { scrollTop: target.offset().top }, 1000);
-	// 				return false;
-	// 			}
-	// 		}
-	// 	});
-	// });
-
 	// ANIMATIONS ON SCROLL
+	// See JS30 #13.
 
 	// Features Section:
 	$( ".js--wp-1" ).waypoint( function( direction ) {
